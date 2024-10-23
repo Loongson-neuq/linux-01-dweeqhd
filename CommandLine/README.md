@@ -13,6 +13,7 @@
 你能获取到的信息：
 
 ```
+用户名是caiyi，主机名是archlinux，工作目录是~，提示符是 $，命令是git，参数是 --version。
 
 ```
 
@@ -27,7 +28,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+终端工具是fish shell，用户名caiyi，主机名是LAPTOP-I80ETG8J,工作目录是~，提示符是>,命令是git，参数是 --version。
 ```
 
 ### 3
@@ -37,6 +38,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
+终端工具是fish shell，用户名是yttehs，主机名是ROG-Strix-G16,工作目录是~，提示符是>。
 
 ```
 
@@ -47,6 +49,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
+终端工具是Z Shell，工作目录是~。
 
 ```
 
@@ -64,7 +67,7 @@ PS C:\Users\Caiyi Hsu>
 你能获取到的信息：
 
 ```
-
+终端工具是PowerShell，用户的家目录是C:\Users\<Caiyi Hsu>，用户名是Caiyi Hsu。
 ```
 
 ### 6
@@ -77,7 +80,7 @@ $ git --version
 你能获取到的信息：
 
 ```
-
+用户名是Caiyi Hsu，主机名是LAPTOP-I80ETG8J，工作目录是~，提示符是 $，命令是git，参数是 --version。
 ```
 
 ## 编写命令
@@ -130,13 +133,13 @@ $ git --version
 
 ## 填空题
 
-1. 给出一个常用的打印文件内容的命令：____
+1. 给出一个常用的打印文件内容的命令：__cat__
 
-2. 给出一个常用的创建空文件夹的命令：____
+2. 给出一个常用的创建空文件夹的命令：__mkdir new-folder__
 
-3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：____
+3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：__chmod +x argv_demo__
 
-4. 在 Shell 中输出 "Hello, world" 的命令：____
+4. 在 Shell 中输出 "Hello, world" 的命令：__echo "Hello, World!"__
 
 ## 简答题
 
@@ -155,7 +158,7 @@ $ git --version
 提示：利用环境变量
 
 ```
-在这里简述你的操作
+使用export命令将工具链的bin目录添加到PATH环境变量中。
 ```
 
 ## 可选附加作业(自学)
@@ -163,11 +166,19 @@ $ git --version
 ### 1
 
 使用 1 行shell命令，在当前文件夹的 a.txt 中写入 "Hello, "
-
+```
+echo "Hello," > a.txt
+```
 ### 2
 
 使用 1 行shell命令，在上一题的的 a.txt 中追加 "world!"
+```
+echo "world!" >> a.txt
+```
 
 ### 3
 
 同过软链接的方式解决[简答题](#简答题)的内容
+```
+使用export命令将工具链的bin目录添加到PATH环境变量中,使用ln -s命令创建软链接，运行source ~/.bashrc使其生效
+```
